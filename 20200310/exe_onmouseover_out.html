@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>On Mouse</title>
+        <script>
+            function aciona_mouse(valor){
+                document.getElementById("msg").innerHTML= valor;
+            }
+        </script>
+    </head>
+    <body>
+            <div id="msg"></div>
+            <br>
+        <table onmouseover="aciona_mouse('entrei na tabela');" onmouseout="aciona_mouse('sai da tabela');" border='1'>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+            <tr>
+                <td>Linha 1 COLUNA 1</td>
+                <td>Linha 2 COLUNA 2</td>
+                <td>Linha 3 COLUNA 3</td>
+            </tr>
+            <tr>
+                <td>Linha 2 COLUNA 1</td>
+                <td>Linha 2 COLUNA 2</td>
+                <td>Linha 2 COLUNA 3</td>
+            </tr>
+        </table>    
+    </body>
+</html>
